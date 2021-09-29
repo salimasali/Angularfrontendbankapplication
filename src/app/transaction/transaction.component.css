@@ -1,0 +1,14 @@
+#background{
+    background-color: #deb887;
+}
+body{
+    text-align:center;
+    margin:40px ;
+    background-color: #deb887;  
+}
+table{
+    border: black;
+    align-content: center;
+    margin-left: 10px;
+    color:red;
+}

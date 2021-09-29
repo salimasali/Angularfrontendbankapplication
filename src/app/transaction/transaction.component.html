@@ -1,0 +1,23 @@
+<html id="background">
+<body>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <h1>Transaction History</h1>
+    <table style="border: 2px;" class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th> Amount</th>&nbsp;&nbsp;
+                <th>Type</th>
+            </tr>
+        </thead>
+            <tbody>
+            <tr *ngFor="let transaction of transactions">
+                <th>{{transaction.amount}}</th>&nbsp;&nbsp;
+                <th>{{transaction.type}}</th>
+            </tr>
+        </tbody>   
+    </table>
+    <br>
+    <a routerLink="/dashboard">Home</a>
+    </body>
+    </html>
